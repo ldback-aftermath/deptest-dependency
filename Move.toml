@@ -1,0 +1,22 @@
+[package]
+name = "dependency"
+version = "0.0.1"
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "framework/testnet"
+override = true
+
+[dependencies.SuiSystem]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-system"
+rev = "framework/testnet"
+override = true
+
+[dependencies.deep-dependency]
+git = "git@github.com:ldback-aftermath/deptest-deep-dependency.git"
+rev = "main"
+
+[addresses]
+dependency = "0x0"
